@@ -1,0 +1,66 @@
+<!-- Ryan Bachman
+     University of Advancing Technology
+     MS587, Databases and Web Development
+     Summer 2024, Grad 1
+     Assignment 2.1 - Building Your Own eBook and Audiobook Web Application -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head> <!-- Create the heading details of the page, including settings content widths and adding stylesheets -->
+        <title>Home Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="stylesheets.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <!-- Creates the navigation bar. This will change colors dependent on the page the user has selected. -->
+        <div class="rb-top">
+          <div class="rb-bar rb-red rb-card rb-left-align rb-large">
+            <a class="rb-bar-item rb-button rb-hide-medium rb-hide-large rb-right rb-padding-large rb-hover-white rb-large rb-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="rb-bar-item rb-button rb-hide-small rb-padding-large rb-hover-white">Home</a>
+            <a href="Interacting.html" class="rb-bar-item rb-button rb-hide-small rb-padding-large rb-hover-white">Interacting with Back-End DB's</a>
+            <a href="IntravInter.html" class="rb-bar-item rb-button rb-hide-small rb-padding-large rb-hover-white">Intranet vs. Internet</a>
+              <a href="References.html" class="rb-bar-item rb-button rb-padding-large rb-white">References</a>
+          </div>
+
+          <!-- Navbar on small screens -->
+          <div id="navDemo" class="rb-bar-block rb-white rb-hide rb-hide-large rb-hide-medium rb-large">
+            <a href="Interacting.html" class="rb-bar-item rb-button rb-padding-large">Interacting with Back-End DB's</a>
+            <a href="IntravInter.html" class="rb-bar-item rb-button rb-padding-large">Intranet vs. Internet</a>
+              <a href="References.html" class="rb-bar-item rb-button rb-padding-large">References</a>
+          </div>
+        </div>
+
+        <!-- Header -->
+        <!-- Differs from HEAD. This is a header field that shows the website overall name and my details. -->
+        <header class="rb-container rb-red rb-center" style="padding:24px 4px">
+          <h1 class="rb-margin rb-jumbo">Guide to Web Apps and Databases</h1>
+          <p class="rb-xlarge">Ryan Bachman, MS587</p>
+        </header>
+
+        <!-- Dropped Grid structure for references. Will show all my references with direct links that open in new tabs -->
+        <div class="rb-row-padding rb-padding-64 rb-container">
+          <div class="rb-content">
+              <h1>References</h1>
+              <p>TechTarget. (2023, January 20). What is web application (web apps) and its benefits. Software Quality. <a href="https://www.techtarget.com/searchsoftwarequality/definition/Web-application-Web-app" target="_blank">https://www.techtarget.com/searchsoftwarequality/definition/Web-application-Web-app</a></p>
+              <p>Gillis, A. S. (2020, July 22). What is a web server and how does it work?. WhatIs. <a href="https://www.techtarget.com/whatis/definition/Web-server" target="_blank">https://www.techtarget.com/whatis/definition/Web-server</a> </p>
+              <p>Wikimedia Foundation. (2023, November 22). Application server. Wikipedia. <a href="https://en.wikipedia.org/wiki/Application_server" target="_blank">https://en.wikipedia.org/wiki/Application_server</a> </p>
+              <p>Microsoft. (n.d.). CSS: Cascading style sheets: MDN. MDN Web Docs. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS</a> </p>
+              <p>RaMotion. (2024, February 14). Databases in web application development: Ramotion branding agency. Web Design, UI/UX, Branding, and App Development Blog. <a href="https://www.ramotion.com/blog/database-in-web-app-development/" target="_blank">https://www.ramotion.com/blog/database-in-web-app-development/</a></p>
+              <p>Acho. (n.d.). How to build a web app database?. Acho. <a href="https://acho.io/blogs/how-to-build-web-app-database " target="_blank">https://acho.io/blogs/how-to-build-web-app-database</a> </p>
+              <p>Harris, Y. (2024, January 8). Intranet vs internet: Understanding the key differences. Powell Software. <a href="https://powell-software.com/resources/blog/difference-between-intranet-and-internet/#:~:text=An%20intranet%20is%20a%20private,or%20files%20within%20an%20organization." target="_blank">https://powell-software.com/resources/blog/difference-between-intranet-and-internet/#:~:text=An%20intranet%20is%20a%20private,or%20files%20within%20an%20organization.</a> </p>
+              <p>Blink. (n.d.). Internet vs. intranet vs. extranet: The key differences. Blink. <a href="https://www.joinblink.com/intelligence/internet-intranet-extranet#:~:text=Use%20the%20internet%20when%20you,another%2C%20and%20follow%20company%20news." target="_blank">https://www.joinblink.com/intelligence/internet-intranet-extranet#:~:text=Use%20the%20internet%20when%20you,another%2C%20and%20follow%20company%20news.</a> </p>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <!-- Creates a small footer at the bottom of the page with my name and class details. -->
+        <footer class="rb-container rb-padding-64 rb-center rb-opacity">
+         <p>Ryan Bachman, University of Advancing Technology, MS587, Databases and Web Development</p>
+        </footer>
+    </body>
+</html>
