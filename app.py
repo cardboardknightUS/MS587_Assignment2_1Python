@@ -21,14 +21,19 @@ def get_headers(response):
 @app.route('/')
 def main():
     """Entry point; the view for the main page"""
-    books = [(record.book_id, record.book_name) for record in data]
-    return render_template('index.html', books=books)
+    return render_template('index.html')
 
 
+@app.route('/second')
+def reading_page():
+    """Views for the city details"""
+    return render_template('Reading.html')
 
-@app.route('/')
-def hello_world():  # put application's code here
-    return 'Hello World!'
+
+@app.route('/third')
+def reference_page():
+    """Views for the city details"""
+    return render_template('References.html')
 
 
 if __name__ == '__main__':

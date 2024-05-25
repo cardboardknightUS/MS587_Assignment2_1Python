@@ -2,7 +2,7 @@ from sqlalchemy import MetaData, create_engine, Integer, String, Float, ForeignK
 from sqlalchemy.orm import sessionmaker, relationship, declarative_base
 
 metadata = MetaData()
-engine = create_engine('sqlite:///user_database', connect_args={'check_same_thread': False}, echo=False)  # echo=False
+engine = create_engine('sqlite:///book_database', connect_args={'check_same_thread': False}, echo=False)  # echo=False
 Base = declarative_base()
 db_session = sessionmaker(bind=engine)()
 
@@ -31,7 +31,7 @@ def get_books():
 
 # Generating the summaries of the books in the book_details table.
 def get_book_summary(books):
-    return [summary.book_summary for summary in books.book_details_data]
+    return [book_id.book_summary for book_id in books.book_details_data]
 
 
 data = get_books()
