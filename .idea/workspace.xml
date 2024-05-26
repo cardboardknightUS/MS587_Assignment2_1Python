@@ -4,21 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17dddcad-c10c-459d-811a-73016182f7fd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MS587_Assignment2_1Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MS587_Assignment2_1Python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/templateLanguages.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="17dddcad-c10c-459d-811a-73016182f7fd" name="Changes" comment="Final updates for the night. Have stories linked to their own pages now and all links working correctly.">
+      <change beforePath="$PROJECT_DIR$/.idea - Copy/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea - Copy/MS587_Assignment2_1Python.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea - Copy/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea - Copy/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea - Copy/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea - Copy/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea - Copy/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea - Copy/templateLanguages.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea - Copy/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/book_database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sl_100420_36170_18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Reading.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Reading.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/References.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/References.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/eReader.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/eReader.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +37,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "cardboardknightUS"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/cardboardknightUS/MS587_Assignment2_1Python",
+    "accountId": "192b52ff-866c-413e-8dbe-2daff08ba6e3"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 1
@@ -105,14 +115,35 @@
       <option name="presentableId" value="Default" />
       <updated>1716688165061</updated>
       <workItem from="1716688166409" duration="1856000" />
-      <workItem from="1716690050480" duration="7659000" />
+      <workItem from="1716690050480" duration="9158000" />
     </task>
+    <task id="LOCAL-00001" summary="Final updates for the night. Have stories linked to their own pages now and all links working correctly.">
+      <option name="closed" value="true" />
+      <created>1716698192156</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716698192156</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Final updates for the night. Have stories linked to their own pages now and all links working correctly.">
+      <option name="closed" value="true" />
+      <created>1716698258900</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716698258900</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Final updates for the night. Have stories linked to their own pages now and all links working correctly." />
+    <option name="LAST_COMMIT_MESSAGE" value="Final updates for the night. Have stories linked to their own pages now and all links working correctly." />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MS587_Assignment2_1Python$MS587_Assignment2_1Python.coverage" NAME="MS587_Assignment2_1Python Coverage Results" MODIFIED="1716696745774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/MS587_Assignment2_1Python$MS587_Assignment2_1Python.coverage" NAME="MS587_Assignment2_1Python Coverage Results" MODIFIED="1716752616506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

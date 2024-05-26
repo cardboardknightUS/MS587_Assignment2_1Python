@@ -45,6 +45,8 @@ def ereader_page(book_id):
         books = get_specific_book(book_id)
         book_details = get_book_details(book_id)
 
+        text_to_speech("Hello, my name is Ryan!", "Male")
+
         return render_template('eReader.html', books=books, book_details=book_details)
     except Exception as e:
         error_text = "<p>The error:<br>" + str(e) + "</p>"
@@ -58,10 +60,31 @@ def reference_page():
     return render_template('References.html')
 
 
+def text_to_speech(text, gender):
+    """
+    Function to convert text to speech
+    :param text: text
+    :param gender: gender
+    :return: None
+    """
+    voice_dict = {'Male': 0, 'Female': 1}
+    code = voice_dict[gender]
+
+    engine = pyttsx3.init()
+
+    # Setting up voice rate
+    engine.setProperty('rate', 125)
+
+    # Setting up volume level  between 0 and 1
+    engine.setProperty('volume', 0.8)
+
+    # Change voices: 0 for male and 1 for female
+    voices = engine.getProperty('voices')
+    engine.setProperty('voice', voices[code].id)
+
+    engine.say(text)
+    engine.runAndWait()
+
+
 if __name__ == '__main__':
     app.run()
-    # hello_world()
-    # engine = pyttsx3.init()
-    # engine.say('Sally sells seashells by the seashore.')
-    # engine.say('The quick brown fox jumped over the lazy dog.')
-    # engine.runAndWait()
