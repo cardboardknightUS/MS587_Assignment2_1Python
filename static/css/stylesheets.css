@@ -1760,3 +1760,11 @@ a {
 .rb-border-pale-blue, .rb-hover-border-pale-blue:hover {
     border-color: #e7ffff !important /* Sets the color of an element's border. */
 }
+
+.rb-book-page-link {
+    color: blue;
+}
+
+.rb-book-page-link:hover {
+    color: darkred;
+}

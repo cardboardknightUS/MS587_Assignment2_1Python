@@ -13,6 +13,7 @@ class Book(Base):
     book_id = Column(Integer, primary_key=True)
     book_name = Column(String)
     book_summary = Column(String)
+    book_genre = Column(String)
     book_details_data = relationship("BookDetails", backref="books")
 
 

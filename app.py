@@ -5,7 +5,9 @@
 # Assignment 2.1 - Building Your Own eBook and Audiobook Web Application
 
 from flask import Flask, render_template, send_file, request, session, redirect, url_for
-from book_database import data, BOOKS, get_books, get_book_summary, db_session
+
+import book_database
+from book_database import data, BOOKS, get_books, get_book_summary, db_session, Book, BookDetails
 import pyttsx3
 
 
@@ -26,8 +28,20 @@ def main():
 
 @app.route('/second')
 def reading_page():
-    """Views for the city details"""
-    return render_template('Reading.html')
+    """Views for the book details that a user can pick to read from the database."""
+    try:
+        books = get_books()
+        return render_template('Reading.html', books=books)
+    except Exception as e:
+        error_text = "<p>The error:<br>" + str(e) + "</p>"
+        hed = '<h1>Something is broken.</h1>'
+        return hed + error_text
+
+
+@app.route('/ereader')
+def ereader_page():
+    """Views for the book details that a user can pick to read from the database."""
+    return render_template('eReader.html')
 
 
 @app.route('/third')
