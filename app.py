@@ -7,7 +7,7 @@
 from flask import Flask, render_template, send_file, request, session, redirect, url_for
 
 import book_database
-from book_database import data, BOOKS, get_books, get_book_summary, db_session, Book, BookDetails
+from book_database import data, BOOKS, get_books, get_specific_book, get_book_details, db_session, Book, BookDetails
 import pyttsx3
 
 
@@ -38,10 +38,18 @@ def reading_page():
         return hed + error_text
 
 
-@app.route('/ereader')
-def ereader_page():
+@app.route('/second/<book_id>')
+def ereader_page(book_id):
     """Views for the book details that a user can pick to read from the database."""
-    return render_template('eReader.html')
+    try:
+        books = get_specific_book(book_id)
+        book_details = get_book_details(book_id)
+
+        return render_template('eReader.html', books=books, book_details=book_details)
+    except Exception as e:
+        error_text = "<p>The error:<br>" + str(e) + "</p>"
+        hed = '<h1>Something is broken.</h1>'
+        return hed + error_text
 
 
 @app.route('/third')

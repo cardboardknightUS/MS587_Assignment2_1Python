@@ -20,7 +20,7 @@
         <!-- Creates the navigation bar. This will change colors dependent on the page the user has selected. -->
         <div class="rb-top">
           <div class="rb-bar rb-red rb-card rb-left-align rb-large">
-            <a class="rb-bar-item rb-button rb-hide-medium rb-hide-large rb-right rb-padding-large rb-hover-white rb-large rb-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a class="rb-bar-item rb-button rb-hide-medium rb-hide-large rb-right rb-padding-large rb-hover-white rb-large rb-red" href="javascript:void(0);" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
             <a href="/" class="rb-bar-item rb-button rb-hide-small rb-padding-large rb-hover-white">Home</a>
             <a href="/second" class="rb-bar-item rb-button rb-padding-large rb-white">Book Catalogue</a>
               <a href="/third" class="rb-bar-item rb-button rb-hide-small rb-padding-large rb-hover-white">References</a>
@@ -37,7 +37,7 @@
         <!-- Header -->
         <!-- Differs from HEAD. This is a header field that shows the website overall name and my details. -->
         <header class="rb-container rb-red rb-center" style="padding:24px 4px">
-          <h1 class="rb-margin rb-jumbo">Guide to Web Apps and Databases</h1>
+          <h1 class="rb-margin rb-jumbo">Building Your Own eBook and Audiobook Web Application</h1>
           <p class="rb-xlarge">Ryan Bachman, MS587</p>
         </header>
 
@@ -46,20 +46,19 @@
         <div class="rb-row-padding rb-padding-64 rb-container">
           <div class="rb-content">
             <div class="rb-twothird">
-              <h1>Database Types</h1>
+                <div class="item">
+                    {% for details in book_details %}
+                        {% for book in books %}
+                            <h1>{{ book.book_name }}</h1>
+                            <p class="rb-text-grey">{{ details.book_text }}</p>
+                        {% endfor %}
+                    {% endfor %}
+                </div>
+            </div>
 
-              <p class="rb-text-grey">There are two types of databases that are used for web applications; Relational and Non-Relational databases.
-                  A relational database is a collection of data that is <b>structured</b> and accessed in order to locate specific information.
-                  It does this by maintaining a relationship between two or more entities. Some benefits of relational databases are its scalability,
-                  ease-of-use, integrity of the data and uptime/reliability of the database. Some downsides of relational databases are that it's slow
-                  to pull data, inability to store documents/graphs in original format, sparse data storage and fixed schema (unable to change the structure
-                  once created).
-              </p>
-                <p class="rb-text-grey">A non-relational database is a collection of data that is <b>unstructured</b> and doesn't have a strict distinction
-                    between rows, columns and their relations. Due to this increased flexibility, these databases are generally faster and more flexible.
-                  Some benefits of relational databases are its scalability, ease-of-use, speed, and processing time. Some downsides of relational databases are that
-                    it can struggle with large datasets, difficulty updating data, prone to unexpected behavior and lack of standardization between each of the vendors
-                    for non-relational databases.</p>
+            <div class="rb-third rb-center">
+                download
+                audiobook
             </div>
           </div>
         </div>

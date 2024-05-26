@@ -20,7 +20,7 @@
         <!-- Creates the navigation bar. This will change colors dependent on the page the user has selected. -->
         <div class="rb-top">
           <div class="rb-bar rb-red rb-card rb-left-align rb-large">
-            <a class="rb-bar-item rb-button rb-hide-medium rb-hide-large rb-right rb-padding-large rb-hover-white rb-large rb-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a class="rb-bar-item rb-button rb-hide-medium rb-hide-large rb-right rb-padding-large rb-hover-white rb-large rb-red" href="javascript:void(0);" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
             <a href="/" class="rb-bar-item rb-button rb-hide-small rb-padding-large rb-hover-white">Home</a>
             <a href="/second" class="rb-bar-item rb-button rb-padding-large rb-white">Book Catalogue</a>
               <a href="/third" class="rb-bar-item rb-button rb-hide-small rb-padding-large rb-hover-white">References</a>
@@ -37,7 +37,7 @@
         <!-- Header -->
         <!-- Differs from HEAD. This is a header field that shows the website overall name and my details. -->
         <header class="rb-container rb-red rb-center" style="padding:24px 4px">
-          <h1 class="rb-margin rb-jumbo">Guide to Web Apps and Databases</h1>
+          <h1 class="rb-margin rb-jumbo">Building Your Own eBook and Audiobook Web Application</h1>
           <p class="rb-xlarge">Ryan Bachman, MS587</p>
         </header>
 
@@ -51,11 +51,11 @@
               <div class = item>
                   <ul>
                       {% for book in books %}
-                        <li>{{ book.book_name }}</li>
+                        <li>{{ book.book_id }}, {{ book.book_name }}</li>
                           <ul>
                             <li>{{ book.book_genre }}</li>
                             <li>{{ book.book_summary }}</li>
-                            <li><a href="{{  url_for('books', book_id=book_id) }}" class="rb-book-page-link rb-book-page-link:hover">Go to Book Page</a></li>
+                            <li><a href="{{  url_for('ereader_page', book_id=book.book_id) }}" class="rb-book-page-link rb-book-page-link:hover">Go to Book Page</a></li>
                           </ul>
                       {% endfor %}
                   </ul>

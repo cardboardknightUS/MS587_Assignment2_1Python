@@ -22,12 +22,22 @@ class BookDetails(Base):
     __tablename__ = 'book_details'
     id = Column(Integer, primary_key=True)
     book_id = Column(ForeignKey('books.book_id'))
-    book_summary = Column(String)
+    book_text = Column(String)
 
 
 # Retrieving data from the database
 def get_books():
     return db_session.query(Book)
+
+
+# Retrieving data from the database
+def get_specific_book(id):
+    return db_session.query(Book).filter_by(book_id=id).all()
+
+
+# Retrieving data from the database
+def get_book_details(id):
+    return db_session.query(BookDetails).filter_by(book_id=id).all()
 
 
 # Generating the summaries of the books in the book_details table.

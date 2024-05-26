@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="book_database" uuid="3e2a8892-b5da-448e-8a6d-1918c2956959">
+    <data-source source="LOCAL" name="book_database" uuid="8a09226f-0fa0-481c-b386-629711a4b254">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:book_database</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\16025\PycharmProjects\MS587_Assignment2_1Python\book_database</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
