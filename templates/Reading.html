@@ -48,7 +48,7 @@
             <div class="rb-twothird">
               <h1>Available Books to Read</h1>
 
-              <div class = item>
+              <div class = item>  <!-- The below uses a loop to go through the books database and puts all book details on the page. Also generates the link to the specific book. -->
                   <ul>
                       {% for book in books %}
                         <li>{{ book.book_id }}, {{ book.book_name }}</li>

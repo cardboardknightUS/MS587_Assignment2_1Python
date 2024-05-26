@@ -46,7 +46,7 @@
         <div class="rb-row-padding rb-padding-64 rb-container">
           <div class="rb-content">
             <div class="rb-twothird">
-                <div class="item">
+                <div class="item">  <!-- The below uses a nested loop to go through the books database and puts the book name and text on the page. -->
                     {% for details in book_details %}
                         {% for book in books %}
                             <h1>{{ book.book_name }}</h1>
@@ -56,7 +56,7 @@
                 </div>
             </div>
 
-            <div class="rb-third rb-center">
+            <div class="rb-third rb-center">  <!-- Adds the below buttons that link with app.py to run the python functions to download and start the audiobook. -->
                 {% for details in book_details %}
                     {% for book in books %}
                         <a href="{{  url_for('download_book', book_id=book.book_id) }}">Download eBook</a>
