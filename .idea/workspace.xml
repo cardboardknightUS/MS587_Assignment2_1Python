@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17dddcad-c10c-459d-811a-73016182f7fd" name="Changes" comment="Final updates for the night. Have stories linked to their own pages now and all links working correctly.">
-      <change beforePath="$PROJECT_DIR$/.idea - Copy/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea - Copy/MS587_Assignment2_1Python.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea - Copy/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea - Copy/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea - Copy/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea - Copy/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea - Copy/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea - Copy/templateLanguages.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea - Copy/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="17dddcad-c10c-459d-811a-73016182f7fd" name="Changes" comment="Further additions in order to get the eReader to work. Pulling data from the database directly into the website now.">
+      <change afterPath="$PROJECT_DIR$/templates/audiobook.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/download.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8a09226f-0fa0-481c-b386-629711a4b254.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8a09226f-0fa0-481c-b386-629711a4b254.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book_database" beforeDir="false" afterPath="$PROJECT_DIR$/book_database" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/eReader.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/eReader.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,42 +31,51 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "cardboardknightUS"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;cardboardknightUS&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/cardboardknightUS/MS587_Assignment2_1Python",
-    "accountId": "192b52ff-866c-413e-8dbe-2daff08ba6e3"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/cardboardknightUS/MS587_Assignment2_1Python&quot;,
+    &quot;accountId&quot;: &quot;192b52ff-866c-413e-8dbe-2daff08ba6e3&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2gz6fUrFkTRSg8yIqLRAjPpjTj0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.MS587_Assignment2_1Python.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.MS587_Assignment2_1Python.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/an00b/PycharmProjects/MS587_Assignment2_1Python/templates",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\an00b\PycharmProjects\MS587_Assignment2_1Python\templates" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="MS587_Assignment2_1Python" type="PythonConfigurationType" factoryName="Python">
       <module name="MS587_Assignment2_1Python" />
@@ -141,9 +144,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Final updates for the night. Have stories linked to their own pages now and all links working correctly." />
-    <option name="LAST_COMMIT_MESSAGE" value="Final updates for the night. Have stories linked to their own pages now and all links working correctly." />
+    <MESSAGE value="Further additions in order to get the eReader to work. Pulling data from the database directly into the website now." />
+    <option name="LAST_COMMIT_MESSAGE" value="Further additions in order to get the eReader to work. Pulling data from the database directly into the website now." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MS587_Assignment2_1Python$MS587_Assignment2_1Python.coverage" NAME="MS587_Assignment2_1Python Coverage Results" MODIFIED="1716752616506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/MS587_Assignment2_1Python$MS587_Assignment2_1Python.coverage" NAME="MS587_Assignment2_1Python Coverage Results" MODIFIED="1716760082237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

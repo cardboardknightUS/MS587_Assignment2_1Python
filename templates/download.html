@@ -45,25 +45,7 @@
         <!-- Uses a grid format so that the image can be on the right and the text can be on the left. -->
         <div class="rb-row-padding rb-padding-64 rb-container">
           <div class="rb-content">
-            <div class="rb-twothird">
-                <div class="item">
-                    {% for details in book_details %}
-                        {% for book in books %}
-                            <h1>{{ book.book_name }}</h1>
-                            <p class="rb-text-grey">{{ details.book_text }}</p>
-                        {% endfor %}
-                    {% endfor %}
-                </div>
-            </div>
-
-            <div class="rb-third rb-center">
-                {% for details in book_details %}
-                    {% for book in books %}
-                        <a href="{{  url_for('download_book', book_id=book.book_id) }}">Download eBook</a>
-                        <a href="{{  url_for('audio_start', book_id=book.book_id) }}">Play Audiobook</a>
-                    {% endfor %}
-                {% endfor %}
-            </div>
+             <h3>Your book has been downloaded! Please check your downloads folder for the .txt file.</h3>
           </div>
         </div>
 
